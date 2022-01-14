@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Dùng Ruby 3.0.3
+- Database mysql 8.0.20
+- Rails 7.0.1
+- Câu lệnh:
++ Run server: docker-compose up
++ Command: docker-compose run web <Cau_lenh_trong_rails>
