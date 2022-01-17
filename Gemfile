@@ -73,3 +73,5 @@ end
 
 # Add gem rubocop
 gem 'rubocop', '~> 1.24', require: false
+# Font-awesome
+gem "font-awesome-rails"
