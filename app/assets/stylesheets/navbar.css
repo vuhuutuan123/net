@@ -1,0 +1,40 @@
+.navbar_container {
+  background-color: #e4e4e4;
+}
+
+.nav .dropdown-toggle::after {
+  display: none;
+}
+
+.nav li {
+  border-right: solid 1px #ddd;
+}
+
+.nav .active {
+  background-color: white;
+}
+
+.nav > li.active > a,
+.nav > li.dropdown:hover > a,
+.nav > li.open > a,
+.nav > li > a:hover {
+  color: #ae4ad9;
+  background-color: #fff;
+}
+
+.nav > li > a {
+  display: block;
+  color: #333;
+  white-space: nowrap;
+  padding: 0 10px;
+  line-height: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav .fa-home {
+  font-size: 20px;
+}
