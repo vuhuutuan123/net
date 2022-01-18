@@ -1,0 +1,61 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+
+    .hide-on-moblie-tablet {
+        display: none;
+    }
+
+    .header-top-mobile__bars {
+        display: block;
+    }
+
+    .wapper {
+        margin: 0;
+    }
+
+    .header-top__container {
+        justify-content: space-between;
+    }
+
+    
+
+}
+@media (min-width: 1113px) {
+
+    .container {
+        width: 1030px;
+    }
+
+    
+
+
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+/* Moblie */
+@media (max-width: 720px) {
+
+    .hide-on-moblie {
+        display: none;
+    }
+
+    .header-top__container {
+        justify-content: flex-start;
+    } 
+
+    .header-top-mobile__bars {
+        margin-left: auto;
+    }
+
+    .header-top__notification {
+        margin-left: 25px;
+    }
+    
+}

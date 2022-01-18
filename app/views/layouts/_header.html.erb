@@ -1,0 +1,47 @@
+<header>
+    <div class="header__top">
+        <div class="header-top__container app-container flex">
+            <a href="#" class="header-top__logo">
+                <%= image_tag "logo.png", class:"header-top__img" %>
+            </a>
+            <div class="header-top__search flex hide-on-moblie">
+                <input type="text" class="search--input" placeholder="Tìm kiếm...">
+                <button type="submit" class="search--submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-top__notification-container">
+                <label for="check-coment">
+                    <i class="header-top__notification fas fa-comment"></i>
+                </label>
+                <input type="checkbox" id="check-coment">
+                <div class="notification">
+                    <a href="#">Thông báo</a>
+                    <div class="notification__content">
+                        <p class="content">Vui long đăng nhập để nhận thông báo</p>
+                    </div>
+                </div>
+                </i>
+            </div>
+            <% if user_signed_in? %>
+        <div class="dropdown">
+            <%= image_tag current_user.avatar_user, class: 'header_avatar dropbtn' %>
+            <div class = "dropdown-content">
+                <%= link_to "Change your password", edit_user_registration_path %>
+                <%= link_to 'Log out', destroy_user_session_path, data: {method: 'delete'} %>
+            </div>
+        </div>
+        <% else %>
+            <%= link_to 'Log in', new_user_session_path, class: 'header_loginBtn' %>
+            <div class="header-top__form hide-on-moblie-tablet">
+                <%= link_to 'Đăng nhập', new_user_session_path, class: 'header-top__login' %>
+                /
+                <%= link_to 'Đăng nhập', new_user_registration_path, class: 'header-top__signup' %>
+            </div>
+        <% end %>
+            
+            <div class="header-top-mobile__bars">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-bars on-nav-mobile"></i>
+            </div>
+        </div>
+    </div>
+</header>

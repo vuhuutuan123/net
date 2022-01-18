@@ -8,9 +8,16 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "header/fontawesome.min.css" %>
+    <%= stylesheet_link_tag "header/base.css" %>
+    <%= stylesheet_link_tag "header/main.css" %>
+    <%= stylesheet_link_tag "header/responsive.css" %>
+    <%= stylesheet_link_tag "header/reset.css" %>
+
 </head>
 
 <body>
+    <%= render "layouts/header" %>
     <%= yield %>
 </body>
 
