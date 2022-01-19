@@ -1,0 +1,64 @@
+.item {
+    border: 1px solid #f2f2f2;
+    margin: 0 7px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media (min-width:  991px) {
+    .item {
+        height: 320px;
+    }
+}
+
+@media (max-width:  990px) {
+    .item {
+        height: 220px;
+    }
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    line-height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 13px;
+    display: block;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.item img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slide-caption h3 {
+    margin: 1px 0;
+    font-weight: 400;
+}
+
+.slide-caption a {
+    color: #fff;
+    font-size: 13px;
+}
+
+.slide-caption .time {
+    font-size: 11px;
+    font-style: italic;
+    padding-left: 10px;
+}
+
+.slide-caption h3 a {
+    height: 23px;
+    overflow: hidden;
+    font-size: 15px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
