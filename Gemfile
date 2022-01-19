@@ -27,6 +27,19 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+# Add gem devise to authenticate user
+gem 'devise'
+
+# Add gem carrierwave to upload image
+gem 'carrierwave'
+
+# Add gem config 
+gem 'config'
+
+gem 'annotate'                    
+gem 'better_errors'               
+gem 'binding_of_caller'  
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
