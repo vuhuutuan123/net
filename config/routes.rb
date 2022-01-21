@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root "comics#index"
+  get "users/dashboard"
   resources :comics, only: [:index]
 end
